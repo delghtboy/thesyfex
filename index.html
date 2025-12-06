@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Syfex – Powerful Discord Security & Automation</title>
+  <meta name="description" content="The Syfex is a powerful Discord bot for security, antinuke, moderation, and automation. Keep your server safe 24/7 with smart protection.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="syfex-logo.png" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="logo">
+        <!-- Replace with your logo image if you have one -->
+        <img src="assets/syfex-logo.png" class="logo-img" alt="Syfex Logo">
+        <span class="logo-text">The Syfex</span>
+        <span class="status-dot2"></span>
+      </div>
+      <nav class="nav-links">
+        <a href="#how-it-works">How it Works</a>
+        <a href="#features">Features</a>
+        <a href="#premium">Premium</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="dashboard.html" class="btn btn-ghost" target="_blank" rel="noopener">
+          Dashboard
+        </a>
+        <a href="https://discord.com/oauth2/authorize?client_id=1441394561942294550&permissions=8&scope=bot" class="btn btn-primary" target="_blank" rel="noopener">
+          Invite Syfex
+        </a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="pill">
+            <span class="pill-dot"></span>
+            <span>Next-gen Discord Protection</span>
+          </div>
+          <h1>
+            Syfex is <span class="animated-text show">Secure</span>
+          </h1>
+          <p>
+            Smart antinuke, powerful moderation, and full automation – all in one Discord bot.
+            Configure once, let Syfex guard your community 24/7.
+          </p>
+          <div class="hero-actions">
+            <a href="https://discord.com/api/oauth2/authorize?client_id=YOUR_BOT_ID&permissions=8&scope=bot%20applications.commands" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+              Invite Syfex
+            </a>
+            <a href="#how-it-works" class="btn btn-outline btn-lg">
+              See how it works
+            </a>
+          </div>
+          <div class="hero-meta">
+            <span>✅ Easy !setup command</span>
+            <span>🛡️ AntiNuke & AntiRaid</span>
+            <span>⚙️ Fully configurable</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <span class="status-dot"></span>
+            <span class="status-text">Not Live protection preview</span>
+          </div>
+          <div class="hero-card-body">
+            <div class="fake-discord">
+              <div class="fake-discord-header">
+                <span class="server-name">Syfex Security Logs</span>
+                <span class="server-pill">NOT LIVE</span>
+              </div>
+              <div class="fake-message">
+                <div class="avatar">S</div>
+                <div class="message-content">
+                  <div class="message-header">
+                    <span class="name">Syfex</span>
+                    <span class="tag">BOT</span>
+                    <span class="time">Today at 18:32</span>
+                  </div>
+                  <div class="message-text">
+                    Detected suspicious mass-ban attempt from <span class="highlight">@karanownsyou</span>.
+                    Action taken: <strong>Blocked</strong>, user banned, admin alerted.
+                  </div>
+                </div>
+              </div>
+              <div class="fake-message">
+                <div class="avatar">S</div>
+                <div class="message-content">
+                  <div class="message-header">
+                    <span class="name">Syfex</span>
+                    <span class="tag">BOT</span>
+                    <span class="time">Today at 18:33</span>
+                  </div>
+                  <div class="message-text">
+                    Auto-mod removed <strong>23 spam messages</strong> in <span class="highlight">#general</span>.
+                  </div>
+                </div>
+              </div>
+              <div class="fake-footer">
+                !help • !antinuke • !logs
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how-it-works" class="section">
+      <div class="section-header">
+        <p class="eyebrow">How Syfex works</p>
+        <h2>We watch. We detect. We react.</h2>
+        <p class="section-subtitle">
+          Syfex is built to stop damage <strong>before</strong> it happens – from nukes and raids
+          to spam and abuse.
+        </p>
+      </div>
+      <div class="cards-grid three">
+        <article class="card step-card">
+          <div class="step-icon">👁️</div>
+          <h3>We watch your server</h3>
+          <p>
+            Syfex monitors key events like role edits, channel deletes, ban waves, and invites –
+            without spamming your logs.
+          </p>
+          <code class="code-pill">!settings security</code>
+        </article>
+        <article class="card step-card">
+          <div class="step-icon">🧠</div>
+          <h3>We detect bad behavior</h3>
+          <p>
+            Any suspicious pattern – mass kicks, role nukes, webhook spam – is instantly flagged
+            and checked against your rules.
+          </p>
+          <code class="code-pill">!antinuke</code>
+        </article>
+        <article class="card step-card">
+          <div class="step-icon">⚡</div>
+          <h3>We take action fast</h3>
+          <p>
+            Syfex can auto-lock channels, strip dangerous perms, ban attackers and ping staff –
+            all automatically.
+          </p>
+          <code class="code-pill">!emergency lock</code>
+        </article>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section">
+      <div class="section-header">
+        <p class="eyebrow">What you get</p>
+        <h2>All-in-one security & moderation suite.</h2>
+        <p class="section-subtitle">
+          No need for 10 different bots. Syfex packs your most important tools into one clean,
+          powerful dashboard and command set.
+        </p>
+      </div>
+      <div class="cards-grid four">
+        <article class="card feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>AntiNuke & AntiRaid</h3>
+          <p>
+            Stop raid bots, role nukers, and griefers with configurable thresholds and instant
+            counter-measures.
+          </p>
+          <code class="code-pill">!security</code>
+        </article>
+
+        <article class="card feature-card">
+          <div class="feature-icon">⚙️</div>
+          <h3>Advanced Moderation</h3>
+          <p>
+            Warnings, mutes, kicks, bans, cases, logs – everything stored cleanly so staff can work fast.
+          </p>
+          <code class="code-pill">!mods</code>
+        </article>
+
+        <article class="card feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3>Automated Systems</h3>
+          <p>
+            Auto-roles, welcome messages, message filters, anti-spam, link filters, and more.
+          </p>
+          <code class="code-pill">auto setup (soon)</code>
+        </article>
+
+        <article class="card feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Clean Dash & Logs</h3>
+          <p>
+            View logs, edit config, and manage modules from a modern dashboard (coming soon / or link yours).
+          </p>
+          <code class="code-pill">Dashboard</code>
+        </article>
+
+        <article class="card feature-card">
+          <div class="feature-icon">🌐</div>
+          <h3>Multi-guild Ready</h3>
+          <p>
+            Perfect for network owners and communities – control all your servers from one place.
+          </p>
+          <code class="code-pill">!guild</code>
+        </article>
+
+        <article class="card feature-card">
+          <div class="feature-icon">🎛️</div>
+          <h3>Fully Customizable</h3>
+          <p>
+            Enable only the modules you need. Tune sensitivity, roles, channels, and permissions easily.
+          </p>
+          <code class="code-pill">!config</code>
+        </article>
+
+        <article class="card feature-card">
+          <div class="feature-icon">🚨</div>
+          <h3>Emergency Mode</h3>
+          <p>
+            One command to hard-lock your server when things go wrong – unlock when the threat is gone.
+          </p>
+          <code class="code-pill">!emergency</code>
+        </article>
+
+        <article class="card feature-card">
+          <div class="feature-icon">💬</div>
+          <h3>Reliable Support</h3>
+          <p>
+            Join the support server for setup help, questions, and early access to new features.
+          </p>
+          <code class="code-pill">!support</code>
+        </article>
+      </div>
+    </section>
+
+    <!-- Premium -->
+    <section id="premium" class="section section-alt">
+      <div class="section-header">
+        <p class="eyebrow">Want even more?</p>
+        <h2>Unlock Syfex Premium.</h2>
+        <p class="section-subtitle">
+          Keep the project alive, support development, and get extra control & automation features.
+        </p>
+      </div>
+      <div class="premium-grid">
+        <div class="card premium-card">
+          <h3>Why Premium?</h3>
+          <p>
+            Hosting, databases, and log storage cost real money. Syfex Premium helps cover that while
+            giving power-users more tools to play with.
+          </p>
+          <ul class="list">
+            <li>💠 All core features stay free for everyone</li>
+            <li>🚀 Premium just adds more speed & control</li>
+            <li>❤️ Your support keeps Syfex online</li>
+          </ul>
+          <a href="premium.html" class="btn btn-primary btn-lg">View Premium Plans</a>
+        </div>
+        <div class="premium-features">
+          <article class="card premium-item">
+            <h4>More automation</h4>
+            <p>Auto-publish announcements, reaction roles, autoreplies, and scheduled tasks.</p>
+          </article>
+          <article class="card premium-item">
+            <h4>More customization</h4>
+            <p>Per-channel rules, advanced regex filters, customizable mod responses, and themes.</p>
+          </article>
+          <article class="card premium-item">
+            <h4>More history</h4>
+            <p>Extended log retention, detailed case history, and searchable moderation logs.</p>
+          </article>
+          <article class="card premium-item">
+            <h4>Priority support</h4>
+            <p>Faster help in the support server and early access to new modules.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="section-header">
+        <p class="eyebrow">FAQ</p>
+        <h2>Questions? We’ve got answers.</h2>
+      </div>
+      <div class="faq-grid">
+        <article class="card faq-item">
+          <h3>Is Syfex free?</h3>
+          <p>
+            Yes. All core security and moderation features are completely free. Premium is optional
+            and only adds extra tools & quality-of-life perks.
+          </p>
+        </article>
+        <article class="card faq-item">
+          <h3>How do I set it up?</h3>
+          <p>
+            Invite the bot, run <code>/setup</code>, and follow the interactive prompts.
+            You can fine-tune everything later with commands or the dashboard.
+          </p>
+        </article>
+        <article class="card faq-item">
+          <h3>Will Syfex nuke my server by mistake?</h3>
+          <p>
+            No. All aggressive actions are behind your own thresholds and settings. You always stay in
+            control of what Syfex is allowed to do.
+          </p>
+        </article>
+        <article class="card faq-item">
+          <h3>Where do I get support?</h3>
+          <p>
+            Join the official support server (link below) or use the <code>/support</code> command in your guild.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section section-cta">
+      <div class="cta-card">
+        <h2>You scrolled this far. Time to let Syfex work for you.</h2>
+        <p>
+          Invite The Syfex to your Discord server and lock in always-on protection in just a few clicks.
+        </p>
+        <div class="hero-actions">
+          <a href="https://discord.com/api/oauth2/authorize?client_id=YOUR_BOT_ID&permissions=8&scope=bot%20applications.commands" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+            Invite Syfex Now
+          </a>
+          <a href="https://discord.gg/YOUR_SUPPORT_SERVER" class="btn btn-outline btn-lg" target="_blank" rel="noopener">
+            Join Support Server
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="assets/syfex-logo.png" class="logo-img" alt="Syfex Logo">
+          <span class="logo-text">The Syfex</span>
+        </div>
+        <p class="footer-text">
+          Secure. Reliable. Automated. The Syfex keeps your Discord community safe around the clock.
+        </p>
+      </div>
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <a href="#">Dashboard</a>
+          <a href="#">Docs</a>
+          <a href="#">Status</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="https://discord.gg/YOUR_SUPPORT_SERVER" target="_blank" rel="noopener">Support Server</a>
+          <a href="#">Contact</a>
+          <a href="#">Report a Bug</a>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="#">Changelog</a>
+          <a href="#">Command List</a>
+          <a href="#">Roadmap</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> The Syfex. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

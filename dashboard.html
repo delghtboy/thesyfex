@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syfex Dashboard – Coming Soon</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="nav">
+  <div class="nav-inner">
+    <div class="logo">
+      <img src="assets/syfex-logo.png" class="logo-img" alt="Syfex Logo">
+      <span class="logo-text">The Syfex</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="premium.html">Premium</a>
+      <a href="dashboard.html" style="color:#fff;">Dashboard</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-outline">Login</a>
+      <a class="btn btn-primary">Invite Bot</a>
+    </div>
+  </div>
+</header>
+
+
+<!-- MAIN SECTION -->
+<section class="dashboard-coming">
+  <div class="dash-box">
+     <h1 class="dash-title">
+        <img src="assets/syfex-logo.png" class="dash-logo">
+        Syfex Dashboard
+     </h1>
+     <p>Manage moderation tools, logs, anti-nuke configuration and modules here.</p>
+
+     <div class="coming-text">
+        Dashboard <span class="dash-highlight">Coming Soon...</span>
+     </div>
+
+     <button class="btn btn-primary btn-lg">Notify Me</button>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-bottom">
+    © <span id="year"></span> The Syfex. All rights reserved.
+  </div>
+</footer>
+
+
+<script>
+document.getElementById("year").innerText = new Date().getFullYear();
+</script>
+
+</body>
+</html>
